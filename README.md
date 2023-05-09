@@ -14,6 +14,11 @@
 ```
 g++ -o delete_backup ./delete_backup.cpp -std=c++17
 ```
+Также можно сделать то то типо авто очистки добавив в планировщик
+```
+crontab -e
+00 03 * * * /root/delete_backup
+```
 
 Примеры работы:
 ```bash
